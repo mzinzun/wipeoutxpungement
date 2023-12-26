@@ -3,12 +3,8 @@ import { Navbar, NavDropdown, Nav, Form, FormControl, Button } from 'react-boots
 
 function MenuNav() {
     return (
-        // <nav className='row menuNav'>
-        //     <NavLink to="/" >Home</NavLink>
-        //     <NavLink to="/contact">Contact</NavLink>
-        // </nav>
         <Navbar className='' expand="lg">
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Toggle aria-controls="basic-navbar-nav" className="bg-danger"/>
             <Navbar.Collapse id="basic-navbar-nav navbar row">
                 <Nav className="navbar col row justify-content-end">
                     <Nav.Link className="menuNav col-md-3" href="/">Home</Nav.Link>

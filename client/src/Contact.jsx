@@ -38,6 +38,7 @@ function Contact() {
         <div className='p-5 w-50'>
             {/* refactor for to use bootstrap instead of react-bootstrap   */}
             <h1>Contact</h1>
+            <p>email: wipeoutrecordsxp@gmail.com</p>
             <p>Fill out the form below and I will get back to you as soon as possible.</p>
             <p>Or you can call me at 555-555-5555</p>
             <form onSubmit={handleSubmit}>
