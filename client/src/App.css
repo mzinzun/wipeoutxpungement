@@ -33,9 +33,10 @@ z-index: 10;
 .wrapper {
   position: relative;
   height: 100vh;
+  width: 100vw;
   display: grid;
   grid-template-rows: 150px 1fr 50px;
-
+  /* padding: 2% 5%; */
 
 }
 main {
@@ -43,16 +44,25 @@ main {
   overflow-y: auto;
   padding: 20px;
   padding-top: 5%;
+  z-index: 100;
+  overflow-y: auto;
+  padding: 20px;
+  padding-top: 5%;
+  background-color: rgb(245 244 241);
 }
 header {
   z-index: 100;
+  padding: 0 20px !important;
+  margin: 0 !important;
 }
 .navbar {
   /* border: thin solid red !important; */
 }
 .menuNav {
   /* border: thin solid blue; */
-  color: White !important;
+  color: rgb(120, 110, 2) !important;
+  font-size: 1.25rem;
+  font-weight: bold;
 }
 .logo img{
   /* border: thin solid yellow; */
@@ -64,19 +74,23 @@ header {
 .menuTitle {
   /* border: thin solid blue; */
   color: rgb(201 3 3) !important;
-  font-size: clamp(1.5rem, 5.5vw, 5.5rem);
-  /* font-weight: bold; */
+  font-size: clamp(1.5rem, 5vw, 5.5rem);
+  font-weight: bold;
   margin: 0 auto;
   padding: 0;
 }
 .home{
   /* border: thin solid green; */
-  height: 100% !important;
-  overflow:hidden;
+  height: fit-content !important;
+  /* overflow:hidden; */
+  padding-bottom: 5% !important;
+}
+.homeImg {
+
 }
 .blocktext {
   padding: 50px !important;
   font-size: 1.5rem;
-  color: rgb(237 227 34);
+  /* color: rgb(237 227 34); */
   background-color: #fdfdfd80;
 }

@@ -8,7 +8,7 @@ import './App.css'
 function App() {
 	return (
 		<div className='container-fluid wrapper'>
-			<header className='row justify-content-between align-items-center px-4'>
+			<header className='row w-100 justify-content-between align-items-center bg-dark'>
 				<div className='col-3 logo p-0 m-0'>
 					<img className='img img-fluid ' src="../src/assets/wipoutImg3.png" alt="WipeOut Records logo" />
 				</div>
@@ -26,7 +26,7 @@ function App() {
 			</main>
 
 			{/* <footer><p>This is my footer</p></footer> */}
-			<div id="bg-img"></div>
+			{/* <div id="bg-img"></div> */}
 		</div>
 	)
 }

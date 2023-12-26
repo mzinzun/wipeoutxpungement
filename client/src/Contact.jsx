@@ -51,20 +51,38 @@ function Contact() {
                     onChange={handleChange} />
                     <label htmlFor="legalName" className='text-danger'>Legal Name:</label>
                 </div>
+                <div className="form-floating mb-3">
+                    <input
+                    type="text"
+                    className="form-control"
+                    id="arrestingNames"
+                    placeholder="Enter legal name"
+                    value={formData.arrestingNames}
+                    onChange={handleChange} />
+                    <label htmlFor="arrestingNames" className='text-danger'>Arresting Name:</label>
+                </div>
                 <div className="form-floating  mb-3">
                     <input type="email" className="form-control" id="email" placeholder="Enter email" value={formData.email} onChange={handleChange} />
                     <label htmlFor="email" className='text-danger'>Email:</label>
                 </div>
                 <div className="form-floating  mb-3">
                     <input type="tel" className="form-control" id="phone" placeholder="Enter phone" value={formData.phone} onChange={handleChange} />
-                    <label htmlFor="phone" className="form-label">Phone:</label>
+                    <label htmlFor="phone" className="form-label text-danger">Phone:</label>
+                </div>
+                <div className="form-floating  mb-3">
+                    <input type="date" className="form-control" id="dob" placeholder="Enter Date of Birth" value={formData.dob} onChange={handleChange} />
+                    <label htmlFor="dob" className="form-label text-danger">Date of birth:</label>
                 </div>
                 <div className="form-floating mb-3">
-                    <textarea className="form-control" id="message" rows="3" value={formData.message} onChange={handleChange}></textarea>
-                    <label htmlFor="message" className='text-danger'>Message:</label>
+                    <textarea className="form-control" id="additionalInfo" rows="3" value={formData.additionalInfo} onChange={handleChange}></textarea>
+                    <label htmlFor="additionalInfo" className='text-danger text-danger'>Anything i will need to know as I do my search?</label>
+                </div>
+                <div className="form-floating  mb-3">
+                    <input type="text" className="form-control" id="pendingCharges" placeholder="Pending Charges" value={formData.pendingCharges} onChange={handleChange} />
+                    <label htmlFor="pendingCharges" className="form-label text-danger">Pending Charges:</label>
                 </div>
                 <div className="mb-3">
-                    <label htmlFor="contactMethod" className='text-danger'>Preferred Contact Method:</label>
+                    <label htmlFor="contactMethod" className='text-danger text-danger'>Preferred Contact Method:</label>
                     <select className="form-select" id="contactMethod" value={formData.contactMethod} onChange={handleChange}>
                         <option value="email">Email</option>
                         <option value="phone">Phone</option>
