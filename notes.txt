@@ -5,3 +5,6 @@ Phone #:
 DOB:
 Any pending charges?
 Anything i will need to know as I do my search?
+
+hold
+"deploy": "gh-pages -d build",
