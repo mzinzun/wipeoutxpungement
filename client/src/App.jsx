@@ -21,7 +21,7 @@ function App() {
 			<main>
 				<Routes>
 					<Route exact path="/" element={<Home />} />
-					<Route path="/wipeoutexpungements/contact" element={<Contact />} />
+					<Route path="/contact" element={<Contact />} />
 				</Routes>
 			</main>
 
