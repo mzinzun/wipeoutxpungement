@@ -1,2 +1,0 @@
-# wipeoutxpungement
-Site for Misty
