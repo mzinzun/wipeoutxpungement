@@ -10,7 +10,7 @@ export default defineConfig({
   server: {
     port: 3000
   },
-  // base: '/wipeoutxpungement/',
+  base: '/wipeoutxpungement/client/',
   publicDir: 'public',
   assetsInclude: ['src/assets'],
 })
